@@ -1,0 +1,19 @@
+// Base styles and reset
+@import './variables.scss';
+
+body, html {
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: var(--text--color);
+    background-color: var(--background--color);
+}
+
+P{
+    text-align: justify;
+}
+
+
