@@ -1,56 +1,46 @@
-import React, {Fragment} from 'react'
-import { useTranslation, Trans } from 'react-i18next';
-import i18n from '../i18n';
+import React, {Fragment, FC } from 'react';
+import Header from '../components/Header';
 
 
-const lngs = {
-    en: { nativeName: 'English' },
-    ro: { nativeName: 'Romana' }
-  };
 
-const HomeScreen = () => {
-    const { t, i18n } = useTranslation();
+interface HomeScreenProps {
+    translate: (key: string) => string
+}
+
+const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
 
     return (
         <Fragment>
+            <Header/>
             <h2>HomeScreen</h2>
             <h3>Welcome</h3>
-            <div>
-          {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng].nativeName}
-            </button>
-          ))}
-        </div>
+        
             <div className='box'>
             <p>
-                <Trans i18nKey="intro.p1">
-                When you need a website, what you actually need is an identity.
-                </Trans>
+            {translate('p1')}
             </p>
             <p>
-                <Trans i18nKey="intro.p2">
-                    {t('intro.p2')}
-                </Trans>
+                    {translate('p2')}
+
                 </p>
-            <p>That is a lot</p>
+            <p>{translate('p3')}</p>
             </div>
             <div className='box'>
-                I will focus on finding that something that defines you or your business so we will show you on your best.
+            {translate('p4')}
             </div>
-            <div className="box">My work is aligned to top industry standards: 
+            <div className="box">{translate('p5')} 
             <ul>
-                <li>responsive designs</li>
-                <li>seo optimization</li>
-                <li>social media integration</li>
-                <li>scalability</li>
+                <li>{translate('l1')}</li>
+                <li>s{translate('l2')}</li>
+                <li>{translate('l3')}</li>
+                <li>{translate('l4')}</li>
             </ul>
             </div>
             <div>
-                <p>We will keep a close connection trough the entire project to make sure everything is up to your wishes</p>
+                <p>{translate('p6')}</p>
             </div>
             <div className="box">
-                <p>I will consider your requirements and provide the best suited solution, so you will not waste resources on useless flashiness.</p>
+                <p>{translate('p7')}</p>
             </div>
             <div className="box">
                 Better invest in an online marketing campaign that will bring you customers. 

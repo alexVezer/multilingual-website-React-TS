@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, FC, ReactNode, createContext } from 'react';
+import React, { useReducer, FC, ReactNode, createContext } from 'react';
  import en from '../i18n/en.json'
  import ro from '../i18n/ro.json'
 
@@ -57,7 +57,7 @@ const LangState : FC<LangStateProps> = ({children}) => {
         });
     }
 
-    const translate = (key: string): string => {
+    const translate = (key: string):string => {
         const { language } = state;
 
         let langData: {[key:string]: string } = {};

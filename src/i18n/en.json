@@ -1,4 +1,20 @@
 {
+    "despre":"About",
+    "galerie": "Gallery",
+    "contact": "Contact",
     "p1":"When you need a website, what you actually need is an identity.",
-    "p2": "This one will present you as far as WWW goes."
+    "p2": "This one will present you as far as WWW goes.",
+    "p3": "That is a lot",
+    "p4": "I will focus on finding that something that defines you or your business so we will show you on your best.",
+    "p5": "My work is aligned to top industry standards:",
+    "l1": "responsive designs",
+    "l2": "seo optimization",
+    "l3": "social media integration",
+    "l4": "scalability",
+    "p6": "We will keep a close connection trough the entire project to make sure everything is up to your wishes",
+    "p7": "I will consider your requirements and provide the best suited solution, so you will not waste resources on useless flashiness.",
+
+    "pageNotFound": "The page you are looking for does not exist. Go back to the Homepage.",
+    "backToHomepage": "Back to Homepage"
+
 }

@@ -1,4 +1,21 @@
 {          
+    "despre":"Despre noi",
+    "galerie": "Galerie",
+    "contact": "Contact",
     "p1":"Cand ai nevoie de un site, ai nevoie de fapt de o identitate.",
-    "p2": "Aceasta te va reprezenta cat e WWW-ul de intins."
+    "p2": "Aceasta te va reprezenta cat e WWW-ul de intins.",
+    "p3": "...asta inseamna multa expunere.",
+    "p4": "Voi gasi acel ceva care te defineste pe tine sau pe afacerea ta, astfel incat sa te prezentam in cea mai buna lumina.",
+    "p5": "Lucrez la cele mai inalte standarde ale industriei:",
+    "l1": "design-uri scalabile, optimizate pentru orice marime de ecran",
+    "l2": "optimizare seo",
+    "l3": "integrare social media",
+    "l4": "scalabilitate pentru a te putea extinde oricat vei avea nevoie",
+    "p6": "Vei primi update-uri regulate pe tot parcursul proiectului pentru a ne asigura ca produsul final va fi ceea ce iti doresti",
+    "p7": "Vom gasi cea mai buna solutie pentru cerintele tale, astfel incat sa nu irosesti resurse valoroase pe lucruri de care nu ai nevoie",
+
+
+    "pageNotFound": "Pagina pe care o cauti nu mai exista. Intoarce-te la pagina pricipala.",
+    "backToHomepage": "Pagina principala"
+
 }
