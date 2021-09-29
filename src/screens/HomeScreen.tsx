@@ -2,7 +2,6 @@ import React, {Fragment, FC } from 'react';
 import Header from '../components/Header';
 
 
-
 interface HomeScreenProps {
     translate: (key: string) => string
 }
@@ -11,9 +10,9 @@ const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
 
     return (
         <Fragment>
+        
             <Header/>
-            <h2>HomeScreen</h2>
-            <h3>Welcome</h3>
+            <div className='flex-center-container'>
         
             <div className='box'>
             <p>
@@ -24,6 +23,9 @@ const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
 
                 </p>
             <p>{translate('p3')}</p>
+            </div>
+            <div className="box">
+                <img src={`${process.env.PUBLIC_URL}/img`} alt="" />
             </div>
             <div className='box'>
             {translate('p4')}
@@ -45,6 +47,7 @@ const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
             <div className="box">
                 Better invest in an online marketing campaign that will bring you customers. 
             </div>
+        </div>
         </Fragment>
     )
 }

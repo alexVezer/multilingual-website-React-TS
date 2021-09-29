@@ -50,9 +50,9 @@ const Header: FC<HeaderProps> = ({fixed, transparent }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Link to={`${process.env.PUBLIC_URL}/galerie`}>{translate('galerie')}</Link>
-                    <Link to={`${process.env.PUBLIC_URL}/despre`}>{translate('despre')}</Link>
-                    <Link to={`${process.env.PUBLIC_URL}/contact`}>{translate('contact')}</Link>
+                    <Link className='mainNavItem' to={`${process.env.PUBLIC_URL}/galerie`}>{translate('galerie')}</Link>
+                    <Link className='mainNavItem' to={`${process.env.PUBLIC_URL}/despre`}>{translate('despre')}</Link>
+                    <Link className='mainNavItem' to={`${process.env.PUBLIC_URL}/contact`}>{translate('contact')}</Link>
                     <p className="selected" onClick={()=> setShowDropdown(!showDropdown)}>{language}</p>
                     {showDropdown && <ul className="dropdown" ref={dropdownEl}>
                         <li onClick={() => chooseLanguageHandler('EN')}>EN</li>
