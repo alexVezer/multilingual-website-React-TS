@@ -1,10 +1,12 @@
 import React, {Fragment, FC } from 'react';
 import Header from '../components/Header';
-
+import photo1 from '../img/logan-weaver.jpg'
 
 interface HomeScreenProps {
     translate: (key: string) => string
 }
+
+console.log(photo1);
 
 const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
 
@@ -12,6 +14,9 @@ const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
         <Fragment>
         
             <Header/>
+            <div className="box">
+                <img src={photo1} alt="" />
+            </div>
             <div className='flex-center-container'>
         
             <div className='box'>
@@ -24,16 +29,13 @@ const HomeScreen: FC<HomeScreenProps> = ({translate}) => {
                 </p>
             <p>{translate('p3')}</p>
             </div>
-            <div className="box">
-                <img src={`${process.env.PUBLIC_URL}/img`} alt="" />
-            </div>
             <div className='box'>
             {translate('p4')}
             </div>
             <div className="box">{translate('p5')} 
             <ul>
                 <li>{translate('l1')}</li>
-                <li>s{translate('l2')}</li>
+                <li>{translate('l2')}</li>
                 <li>{translate('l3')}</li>
                 <li>{translate('l4')}</li>
             </ul>

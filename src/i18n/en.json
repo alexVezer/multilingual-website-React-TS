@@ -14,6 +14,12 @@
     "p6": "We will keep a close connection trough the entire project to make sure everything is up to your wishes",
     "p7": "I will consider your requirements and provide the best suited solution, so you will not waste resources on useless flashiness.",
 
+        "s0": "service 1",
+        "s1": "service 2",
+        "s2": "service 3",
+        "s3": "service 4",
+        "s4": "service 5",
+        
     "pageNotFound": "The page you are looking for does not exist. Go back to the Homepage.",
     "backToHomepage": "Back to Homepage"
 
